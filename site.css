@@ -324,3 +324,16 @@ input:focus, textarea:focus, select:focus {
 .service-card li a { color: inherit; text-decoration: underline; text-decoration-color: rgba(116, 226, 255, 0.4); text-underline-offset: 3px; }
 .service-card li a:hover { color: var(--primary); }
 @media (max-width: 820px) { .related-grid { grid-template-columns: 1fr; } }
+
+/* ---- FAQ ---- */
+.faq-list { max-width: 50rem; display: grid; gap: 0.8rem; }
+.faq-item { border: 1px solid var(--border); border-radius: 18px; background: var(--surface); }
+.faq-item[open] { border-color: var(--border-strong); }
+.faq-item summary { cursor: pointer; list-style: none; padding: 1.1rem 3rem 1.1rem 1.3rem; font-weight: 700; color: var(--text); position: relative; }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after { content: "+"; position: absolute; right: 1.3rem; top: 50%; transform: translateY(-50%); color: var(--primary); font-size: 1.4rem; line-height: 1; }
+.faq-item[open] summary::after { content: "\2212"; }
+.faq-item summary:focus-visible { outline: 2px solid var(--primary); outline-offset: 3px; border-radius: 18px; }
+.faq-answer { padding: 0 1.3rem 1.2rem; }
+.faq-answer p { margin: 0; color: var(--text-muted); }
+.faq-answer a { color: var(--primary); text-decoration: underline; text-underline-offset: 3px; }
