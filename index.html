@@ -140,10 +140,8 @@
       display: inline-flex; align-items: center; gap: 0.9rem; font-weight: 800;
     }
     .brand-mark {
-      width: 2.9rem; height: 2.9rem; border-radius: 18px;
-      background: linear-gradient(135deg, rgba(116, 226, 255, 0.24), rgba(77, 141, 255, 0.22));
-      border: 1px solid rgba(116, 226, 255, 0.3);
-      color: var(--primary); padding: 0.65rem; box-shadow: inset 0 0 30px rgba(116, 226, 255, 0.12), 0 0 30px rgba(77, 141, 255, 0.12);
+      width: 2.9rem; height: 2.9rem; border-radius: 22%; flex-shrink: 0;
+      box-shadow: 0 0 30px rgba(77, 141, 255, 0.2);
     }
     .brand-text span { display: block; line-height: 1.05; }
     .brand-text small { display: block; font-size: var(--text-xs); color: var(--text-faint); font-weight: 600; margin-top: 0.2rem; }
@@ -303,9 +301,7 @@
   <header class="site-header">
     <div class="container nav-wrap">
       <a class="brand" href="#top" aria-label="MaZen IT Solutions home">
-        <svg class="brand-mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
-          <path d="M10 35V13h4.5l9.5 11.2L33.5 13H38v22h-5V21.3L24 31.5 15 21.3V35H10Z" fill="currentColor"></path>
-        </svg>
+        <img class="brand-mark" src="/favicon.svg" width="46" height="46" alt="">
         <span class="brand-text"><span>MaZen IT Solutions</span><small>Business IT support · Metro Vancouver</small></span>
       </a>
 
