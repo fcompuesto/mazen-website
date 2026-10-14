@@ -350,4 +350,5 @@ input:focus, textarea:focus, select:focus {
 .u-text-lg { font-size: var(--text-lg) !important; }
 .u-mt-1-onecol { margin-top: 1rem !important; grid-template-columns: 1fr !important; }
 .u-cta-title { font-family: var(--font-display) !important; font-size: var(--text-xl) !important; line-height: 1 !important; letter-spacing: -0.03em !important; margin: 1rem 0 !important; }
+.u-link { color: var(--primary); text-decoration: underline; text-underline-offset: 3px; }
 .hp-field { display: none !important; }
