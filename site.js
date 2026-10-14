@@ -1,4 +1,12 @@
 (function () {
+  // Remove Facebook's click tag from the address bar; the site uses no analytics.
+  const url = new URL(window.location.href);
+  if (!url.searchParams.has('fbclid')) return;
+  url.searchParams.delete('fbclid');
+  history.replaceState(history.state, '', url.pathname + url.search + url.hash);
+})();
+
+(function () {
   const nav = document.getElementById('site-nav');
   const toggle = document.querySelector('[data-menu-toggle]');
   if (!nav) return;
