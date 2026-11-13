@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project: Secure SMB in a Box | MaZen IT Solutions</title>
+  <meta name="description" content="An open-source blueprint for a hardened small-business network: OPNsense, VLANs, Active Directory, Wazuh, tested backups, and vulnerability management.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://www.mazenitsolutions.ca/projects/secure-smb-in-a-box/">
+  <meta property="og:title" content="Project: Secure SMB in a Box | MaZen IT Solutions">
+  <meta property="og:description" content="An open-source blueprint for a hardened small-business network: OPNsense, VLANs, Active Directory, Wazuh, tested backups, and vulnerability management.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.mazenitsolutions.ca/projects/secure-smb-in-a-box/">
+  <meta property="og:image" content="https://www.mazenitsolutions.ca/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://www.mazenitsolutions.ca/og-image.png">
+  <meta name="theme-color" content="#08111f">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&f[]=cabinet-grotesk@500,700,800&display=swap">
+  <link rel="stylesheet" href="/site.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="MaZen IT Solutions home">
+        <img class="brand-mark" src="/favicon.svg" width="46" height="46" alt="">
+        <span class="brand-text"><span>MaZen IT Solutions</span><small>Business IT support · Metro Vancouver</small></span>
+      </a>
+
+      <nav class="nav-links" id="site-nav" aria-label="Primary navigation">
+        <a href="/#services">Solutions</a>
+        <a href="/#value">Why MaZen</a>
+        <a href="/#about">About</a>
+        <a href="/#areas">Coverage</a>
+        <a href="/#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"></path></svg>
+        </button>
+        <a class="btn btn-primary" href="/#contact">Book a consultation</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-hero">
+      <div class="container">
+        <ol class="crumbs" aria-label="Breadcrumb">
+          <li><a href="/">Home</a></li>
+          <li aria-current="page">Project: Secure SMB in a Box</li>
+        </ol>
+        <span class="eyebrow">Homelab project · In progress</span>
+        <h1>Secure SMB in a Box.</h1>
+        <p class="lede">A hardened small-business network built on one server and one managed switch, documented step by step so anyone can rebuild it, break it, and learn from it.</p>
+        <div class="hero-actions u-mt-16">
+          <a class="btn btn-primary" href="https://github.com/fcompuesto/secure-smb-in-a-box" target="_blank" rel="noopener">View on GitHub</a>
+          <a class="btn btn-secondary" href="/#contact">Book a consultation</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section u-pb-1">
+      <div class="container split">
+        <article class="card">
+          <span class="kicker">The idea</span>
+          <h2 class="card-title">What a small business actually needs.</h2>
+          <p>Most small offices run on an ISP modem, one flat network, and backups nobody has tested. This project builds the opposite on a home lab: a segmented, monitored, recoverable network that mirrors the work MaZen does for clients.</p>
+          <p class="u-mt-1">Every phase ends with a verification checklist and a &ldquo;break it&rdquo; exercise, so the evidence shows the controls work, not just that they were installed.</p>
+        </article>
+        <article class="card">
+          <span class="kicker">What it covers</span>
+          <h2 class="card-title">The stack.</h2>
+          <ul class="list">
+            <li>OPNsense firewall with five VLANs and default-deny rules between them</li>
+            <li>Active Directory with baseline Group Policy</li>
+            <li>Wazuh monitoring for endpoints and firewall logs</li>
+            <li>Proxmox Backup Server with a tested restore</li>
+            <li>Greenbone vulnerability scans, with before and after results</li>
+            <li>A purple-team exercise: attack, detect, harden</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section u-py-1">
+      <div class="container">
+        <div class="section-head u-mb-15">
+          <span class="eyebrow">The build</span>
+          <h2>Six phases, each documented.</h2>
+        </div>
+        <div class="related-grid">
+          <a class="card card-link" href="https://github.com/fcompuesto/secure-smb-in-a-box/blob/main/docs/01-network-opnsense.md" target="_blank" rel="noopener">
+            <span class="kicker">Phase 1 · In progress</span>
+            <h3>Network and firewall</h3>
+            <p>OPNsense routes and filters the VLANs while the switch stays layer 2 only.</p>
+          </a>
+          <a class="card card-link" href="https://github.com/fcompuesto/secure-smb-in-a-box/blob/main/docs/02-active-directory.md" target="_blank" rel="noopener">
+            <span class="kicker">Phase 2 · Planned</span>
+            <h3>Identity</h3>
+            <p>A small Active Directory domain with realistic users, groups, and policy.</p>
+          </a>
+          <a class="card card-link" href="https://github.com/fcompuesto/secure-smb-in-a-box/blob/main/docs/03-wazuh.md" target="_blank" rel="noopener">
+            <span class="kicker">Phase 3 · Planned</span>
+            <h3>Monitoring</h3>
+            <p>Wazuh agents and firewall logs feeding alerts you can act on.</p>
+          </a>
+          <a class="card card-link" href="https://github.com/fcompuesto/secure-smb-in-a-box/blob/main/docs/04-backup-pbs.md" target="_blank" rel="noopener">
+            <span class="kicker">Phase 4 · Planned</span>
+            <h3>Backups and restore</h3>
+            <p>Encrypted backups, plus a recorded restore test with timings.</p>
+          </a>
+          <a class="card card-link" href="https://github.com/fcompuesto/secure-smb-in-a-box/blob/main/docs/05-vuln-scanning.md" target="_blank" rel="noopener">
+            <span class="kicker">Phase 5 · Planned</span>
+            <h3>Vulnerability management</h3>
+            <p>Scan, prioritize, fix, and rescan to prove the risk went down.</p>
+          </a>
+          <a class="card card-link" href="https://github.com/fcompuesto/secure-smb-in-a-box/blob/main/docs/06-purple-team.md" target="_blank" rel="noopener">
+            <span class="kicker">Phase 6 · Planned</span>
+            <h3>Purple-team exercise</h3>
+            <p>Controlled attacks mapped to MITRE ATT&amp;CK, with detection gaps found and closed.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section u-py-1">
+      <div class="container split">
+        <article class="card">
+          <span class="kicker">How it was built</span>
+          <h2 class="card-title">The approach.</h2>
+          <ol class="steps">
+            <li><strong>Plan.</strong> Define the VLANs, rules, and success checks before touching the hardware.</li>
+            <li><strong>Build.</strong> Snapshot, change one thing, and test it.</li>
+            <li><strong>Prove.</strong> Run the checklist and keep the evidence.</li>
+            <li><strong>Break and fix.</strong> Fail on purpose to confirm the controls and the recovery path.</li>
+          </ol>
+        </article>
+        <article class="card">
+          <span class="kicker">Why it matters to clients</span>
+          <h2 class="card-title">Lab work, client-ready habits.</h2>
+          <p>The same discipline applies to client projects: segmentation by default, monitoring that is actually watched, and backups that have been restored at least once. A sample client report template is included in the repository.</p>
+          <p class="u-mt-1">All addresses and credentials in the public repository are placeholders. Nothing from a real client network is published.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section u-pt-2-pb-1">
+      <div class="container">
+        <div class="panel cta-band">
+          <div>
+            <h2 class="card-title u-text-lg">Want this for your office?</h2>
+            <p class="u-muted-flush">Tell MaZen about your business, your users, and what worries you. You will get a direct reply from the owner.</p>
+          </div>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="/#contact">Book a consultation</a>
+            <a class="btn btn-secondary" href="mailto:info@mazenitsolutions.ca">Email MaZen</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section u-pt-2">
+      <div class="container">
+        <div class="section-head u-mb-15">
+          <span class="eyebrow">Related services</span>
+          <h2>Where this work shows up for clients.</h2>
+        </div>
+        <div class="related-grid">
+          <a class="card card-link" href="/services/firewall-configuration/">
+            <span class="kicker">Related service</span>
+            <h3>Firewall configuration</h3>
+            <p>pfSense and OPNsense rules, segmentation, and VPN for small offices.</p>
+          </a>
+          <a class="card card-link" href="/services/business-network-setup/">
+            <span class="kicker">Related service</span>
+            <h3>Business network setup</h3>
+            <p>A planned office network with separated guest and staff traffic.</p>
+          </a>
+          <a class="card card-link" href="/services/cybersecurity-review/">
+            <span class="kicker">Related service</span>
+            <h3>Cybersecurity review</h3>
+            <p>A prioritized, plain-language list of risks and fixes.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-wrap">
+      <div>© 2026 MaZen IT Solutions · Metro Vancouver, BC</div>
+      <div class="footer-links">
+        <a href="/#services">Solutions</a>
+        <a href="/#value">Why MaZen</a>
+        <a href="/#about">About</a>
+        <a href="/#contact">Contact</a>
+        <a href="/faq/">FAQ</a>
+        <a href="/privacy/">Privacy Policy</a>
+        <a href="https://www.facebook.com/mazenitsolutions/" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "name": "Project: Secure SMB in a Box",
+      "url": "https://www.mazenitsolutions.ca/projects/secure-smb-in-a-box/",
+      "description": "An open-source blueprint for a hardened small-business network: OPNsense, VLANs, Active Directory, Wazuh, tested backups, and vulnerability management.",
+      "publisher": {
+        "@type": "LocalBusiness",
+        "name": "MaZen IT Solutions",
+        "url": "https://www.mazenitsolutions.ca/",
+        "email": "info@mazenitsolutions.ca"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mazenitsolutions.ca/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Project: Secure SMB in a Box",
+          "item": "https://www.mazenitsolutions.ca/projects/secure-smb-in-a-box/"
+        }
+      ]
+    }
+  ]
+}
+  </script>
+  <script src="/site.js" defer></script>
+</body>
+</html>
