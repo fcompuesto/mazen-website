@@ -98,22 +98,22 @@
         </div>
         <div class="related-grid">
           <a class="card card-link" href="https://github.com/fcompuesto/secure-smb-in-a-box/blob/main/docs/01-network-opnsense.md" target="_blank" rel="noopener">
-            <span class="kicker">Phase 1 · In progress</span>
+            <span class="kicker">Phase 1 · Done</span>
             <h3>Network and firewall</h3>
-            <p>OPNsense routes and filters the VLANs while the switch stays layer 2 only.</p>
+            <p>OPNsense routes and filters five VLANs with default-deny rules and logged blocks, while the switch stays layer 2 only.</p>
           </a>
           <a class="card card-link" href="https://github.com/fcompuesto/secure-smb-in-a-box/blob/main/docs/02-active-directory.md" target="_blank" rel="noopener">
-            <span class="kicker">Phase 2 · Planned</span>
+            <span class="kicker">Phase 2 · Done</span>
             <h3>Identity</h3>
-            <p>A small Active Directory domain with realistic users, groups, and policy.</p>
+            <p>A small Active Directory domain with groups, a separate admin account, password and lockout policy, and a workstation baseline.</p>
           </a>
           <a class="card card-link" href="https://github.com/fcompuesto/secure-smb-in-a-box/blob/main/docs/03-wazuh.md" target="_blank" rel="noopener">
-            <span class="kicker">Phase 3 · Planned</span>
+            <span class="kicker">Phase 3 · Done</span>
             <h3>Monitoring</h3>
-            <p>Wazuh agents and firewall logs feeding alerts you can act on.</p>
+            <p>Wazuh agents on the domain controller and workstation, with three detections tested: failed logons, account creation, and privilege changes.</p>
           </a>
           <a class="card card-link" href="https://github.com/fcompuesto/secure-smb-in-a-box/blob/main/docs/04-backup-pbs.md" target="_blank" rel="noopener">
-            <span class="kicker">Phase 4 · Planned</span>
+            <span class="kicker">Phase 4 · In progress</span>
             <h3>Backups and restore</h3>
             <p>Encrypted backups, plus a recorded restore test with timings.</p>
           </a>
